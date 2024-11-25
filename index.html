@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Carlos Alberto - Desenvolvedor Front-end e Designer">
   <title>Meu Portfólio - Carlos Alberto</title>
-  <!-- Favicon (opcional) -->
+  
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Fonte do Google -->
+
+  <!-- Fontes do Google -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilo principal -->
   <link rel="stylesheet" href="css/style.css">
+  
   <style>
     /* Estilos Globais */
     * {
@@ -25,157 +30,55 @@
       line-height: 1.6;
     }
 
-    h1, h2, h3, p {
-      margin: 0;
+    header, section, footer {
+      padding: 20px 0;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
       padding: 0;
     }
 
     a {
       text-decoration: none;
-      color: #3498db; /* Azul */
+      color: #3498db;
     }
 
-    /* Estilo do ícone com as iniciais "Tc" */
-    .icone-tc {
-      width: 50px;
-      height: 50px;
-      background-color: #3498db;
-      color: white;
-      font-size: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    /* Cabeçalho */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #34495e; /* Cor de fundo */
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 2em;
-      color: #ecf0f1;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #ecf0f1;
-    }
-
-    /* Container Principal */
     .container {
       width: 80%;
       margin: 0 auto;
     }
 
-    /* Sobre mim */
-    section#sobre {
-      padding: 50px 0;
-      background-color: #ecf0f1;
-      color: #2c3e50;
-    }
-
-    section#sobre h2 {
-      font-size: 2.5em;
-      color: #2c3e50;
-    }
-
-    section#sobre p {
-      font-size: 1.2em;
-      color: #7f8c8d;
-    }
-
-    /* Habilidades */
-    section#habilidades {
-      padding: 50px 0;
-      background-color: #34495e;
-    }
-
-    section#habilidades h2 {
-      font-size: 2.5em;
-      color: #ecf0f1;
-    }
-
-    section#habilidades ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    section#habilidades li {
-      font-size: 1.2em;
-      color: #ecf0f1;
-      margin: 10px 0;
-    }
-
-    /* Projetos */
-    section#projetos {
-      padding: 50px 0;
-      background-color: #ecf0f1;
-    }
-
-    section#projetos h2 {
-      font-size: 2.5em;
-      color: #34495e;
-    }
-
-    .projeto {
-      background-color: #fff;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .projeto h3 {
-      font-size: 1.8em;
-      color: #34495e;
-    }
-
-    .projeto p {
-      font-size: 1.2em;
-      color: #7f8c8d;
-    }
-
-    .projeto a {
-      color: #3498db;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* Rodapé */
-    footer {
-      padding: 20px 0;
+    /* Estilo de Cabeçalho */
+    header {
       background-color: #34495e;
       color: #ecf0f1;
       text-align: center;
     }
 
-    footer p {
-      font-size: 1em;
+    /* Sobre Mim */
+    #sobre {
+      background-color: #ecf0f1;
+      color: #2c3e50;
     }
 
-    /* Estilos Responsivos */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
+    #habilidades {
+      background-color: #34495e;
+    }
 
-      .icone-tc {
-        margin-bottom: 15px;
-      }
+    #projetos {
+      background-color: #ecf0f1;
+    }
 
-      .container {
-        width: 90%;
-      }
+    /* Rodapé */
+    footer {
+      background-color: #34495e;
+      color: #ecf0f1;
+      text-align: center;
     }
   </style>
 </head>
@@ -186,7 +89,6 @@
 
   <!-- Cabeçalho -->
   <header>
-    <div class="icone-tc">Tc</div>
     <div class="container">
       <h1>Olá, sou Carlos Alberto</h1>
       <p>Desenvolvedor Front-end | Designer Criativo | Freelancer</p>
@@ -222,11 +124,11 @@
       <h2>Meus Projetos</h2>
       <div class="projeto">
         <h3>Projeto 1</h3>
-        <p>Este é um exemplo de descrição de projeto, incluindo as tecnologias usadas e um link para visualização. <a href="#" target="_blank">Ver Projeto</a></p>
+        <p>Descrição do projeto. <a href="#">Ver Projeto</a></p>
       </div>
       <div class="projeto">
         <h3>Projeto 2</h3>
-        <p>Outro exemplo de descrição de projeto, mostrando como ele foi construído e os resultados obtidos. <a href="#" target="_blank">Ver Projeto</a></p>
+        <p>Descrição do projeto. <a href="#">Ver Projeto</a></p>
       </div>
     </div>
   </section>
@@ -234,31 +136,21 @@
   <!-- Rodapé -->
   <footer>
     <div class="container">
-      <p>© 2024 @devcarlosalberto | Todos os direitos reservados.</p>
+      <p>© 2024 Carlos Alberto | Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="js/particles.min.js"></script>
+  <script src="js/particles.js/particles.js"></script>
   <script>
     particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 100
-        },
-        "size": {
-          "value": 3
-        },
-        "move": {
-          "enable": true,
-          "speed": 1
-        }
+      particles: {
+        number: { value: 80 },
+        size: { value: 3 },
+        move: { enable: true, speed: 2 }
       }
     });
   </script>
 
 </body>
 </html>
-
-
-
